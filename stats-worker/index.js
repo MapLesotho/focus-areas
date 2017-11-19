@@ -21,7 +21,9 @@ const jsons = [
 '../11_nameless-2.geojson',
 '../12_Seate_Mokhotlong.geojson',
 '../13_qn_camptown.geojson',
-'../14_phamong_mohales_hoek.geojson'
+'../14_phamong_mohales_hoek.geojson',
+'../15_mokhotlong_camptown.geojson',
+'../17_ha_matjotjo_1.geojson'
 ]
 
 
@@ -60,7 +62,7 @@ function GetStats(geoPath, callback) {
   })
   
   rd.on('end', () => {
-    // console.log('Extent:', extent)
+    console.log('Area:', extent)
     // console.log('Buildings total count: %d', tcount)
     return callback(null, {file: extent, buildings: tcount});
   })  
